@@ -14,7 +14,7 @@
         my_mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <1100>;
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
