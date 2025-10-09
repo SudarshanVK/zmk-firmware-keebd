@@ -95,7 +95,7 @@
                 &kp LS(LC(LA(LG(LCTRL))))  &kp A                        &mt LSHIFT S
                 &kp D                      &kp F                        &kp G
                 &kp H                      &kp J                        &kp K
-                &kp L                      &kp SEMICOLON                &kpSINGLE_QUOTE
+                &kp L                      &kp SEMICOLON                &kp SINGLE_QUOTE
 
                 &kp LSHFT                   &kp Z                        &kp X
                 &kp C                       &kp V                        &kp B
