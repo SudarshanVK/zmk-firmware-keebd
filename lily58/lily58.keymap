@@ -76,10 +76,10 @@
         default_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \\   |
             // | CTRL  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   | "["   | "]"      |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | GUI  | LOWER| SPACE | ENTER| RAISE| BSPC | GUI |
+            //                     | ALT  | GUI  | LOWER| SPACE | ENTER| RAISE| BSPC | CAGS|
 
             bindings = <
                 &kp ESC                     &mt EXCLAMATION KP_NUMBER_1   &mt AT_SIGN KP_NUMBER_2
@@ -114,11 +114,11 @@
 
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |       |       |       |       |       |       |       |
-            // |  F1   |  F2 |  F3 | F4  | F5  | F6  |       | F7    | F8    | F9    | F10   | F11   | F12   |
-            // |  `    |  !  | @   | #   | $   | %   |       | ^     | &     | *     | (     | )     | ~     |
-            // |       |     |     |     |     |     |       |       | _     | +     | {     | }     | |     |
-            //                     |       |       |       |       |       |       |       |
+            // |   `   |     |     |     |     |     |                   | PGUP |  7    |  8    |  9   |   -   |   +   |
+            // |  TAB  |     |     |     |     |  (  |                   |  )   |  4    |  5    |  6   |   *   |       |
+            // | SHIFT |     |     |  "  |  '  |  {  |                   |  }   |  1    |  2    |  3   |       |   ~   |
+            // | SHIFT |     |     |     |     |  [  |                   |      |       |  ]    |  KP- |   0   |   |   |
+            //                     |       |       |       |       |       |       |  BTCLR |
 
             bindings = <
                 &kp GRAVE    &trans   &trans   &trans   &trans   &trans
@@ -127,7 +127,7 @@
                 &kp TAB       &trans   &trans   &trans   &trans   &kp LEFT_PARENTHESIS
                 &kp RIGHT_PARENTHESIS &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp STAR &trans
 
-                &kp LSHFT       &trans   &trans   &trans   &trans   &kp LEFT_BRACE
+                &kp LSHFT       &trans   &trans   &kp DOUBLE_QUOTE   &kp SINGLE_QUOTE   &kp LEFT_BRACE
                 &kp RIGHT_BRACE    &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans &kp TILDE
 
                 &kp LSHFT       &trans   &trans   &trans   &trans   &kp LEFT_BRACKET
@@ -140,23 +140,23 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |     |     |     |       |       |       |       |       |       |       |
-            // |  `    |  1  |  2  |  3  |  4  |  5  |       |  6    |  7    |  8    |  9    |  0    |       |
-            // |  F1   |  F2 |  F3 | F4  | F5  | F6  |       |       | <-    | v     | ^     | ->    |       |
-            // |  F7   |  F8 |  F9 | F10 | F11 | F12 |       |  +    | -     | =     | [     | ]     | \     |
+            // |   ~   |     |     |     |     |     |                   |       |       |       |       | VOL_DN| VOL_UP|
+            // |       |     |     |     |     |     |                   |       |       |       |       |       |       |
+            // |       |     |     |  "  |  '  |     |                   |   :   |  <-   |   v   |   ^   |  ->   |       |
+            // |       |     |     |     |   = |   " |                   |GIT_ADD|GIT_PSH|   ?   |   _   |   =   |       |
             //                     |       |       |       |       |       |       |       |
 
             bindings = <
                 &kp TILDE    &trans   &trans   &trans   &trans   &trans
                 &trans       &trans   &trans   &trans   &kp C_VOL_DN &kp C_VOLUME_UP
 
-                &trans       &trans   &trans   &trans   &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS
-                &trans       &trans   &kp UP_ARROW &trans &trans &trans
+                &trans       &trans   &trans   &trans   &trans   &trans
+                &trans       &trans   &trans &trans &trans &trans
 
-                &trans       &trans   &trans   &trans   &kp LEFT_BRACKET &kp RIGHT_BRACKET
+                &trans       &trans   &trans   &kp DOUBLE_QUOTE   &kp SINGLE_QUOTE &trans
                 &kp COLON       &kp LEFT &kp DOWN &kp RIGHT &trans &trans
 
-                &trans       &trans   &trans   &trans   &kp EQUAL &kp SINGLE_QUOTE
+                &trans       &trans   &trans   &trans   &kp EQUAL &kp DOUBLE_QUOTE
                 &git_add     &git_push &kp QUESTION &kp LS(MINUS) &kp EQUAL &trans &trans &trans
 
                 &trans &trans &trans &trans &trans &trans &trans &trans
