@@ -154,7 +154,7 @@
                 &trans       &trans   &kp UP &trans &trans &trans
 
                 &trans       &trans   &trans   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE &trans
-                &kp COLON       &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+                &kp LEFT     &kp DOWN &kp UP   &kp RIGHT &kp COLON  &trans
 
                 &trans       &trans   &trans   &trans   &kp EQUAL &kp DOUBLE_QUOTES
                 &git_add     &git_push &kp QUESTION &kp LS(MINUS) &kp EQUAL &trans &trans &trans
