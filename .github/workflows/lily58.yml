@@ -5,6 +5,8 @@ on:
   push:
     branches:
     - main
+    - feature/**
+    - cleanup
     paths:
     - .github/workflows/lily58.yml
     - lily58/**
@@ -16,7 +18,7 @@ jobs:
       build_matrix_path: lily58/lily58.yaml
       config_path: lily58
       archive_name: lily58-firmware
-        
+
   lily58-store:
     if: always()
     needs: lily58-build
