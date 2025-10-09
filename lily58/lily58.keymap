@@ -127,7 +127,7 @@
                 &kp TAB       &trans   &trans   &trans   &trans   &kp LEFT_PARENTHESIS
                 &kp RIGHT_PARENTHESIS &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp STAR &trans
 
-                &kp LSHFT       &trans   &trans   &kp DOUBLE_QUOTE   &kp SINGLE_QUOTE   &kp LEFT_BRACE
+                &kp LSHFT       &trans   &trans   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE   &kp LEFT_BRACE
                 &kp RIGHT_BRACE    &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans &kp TILDE
 
                 &kp LSHFT       &trans   &trans   &trans   &trans   &kp LEFT_BRACKET
@@ -153,10 +153,10 @@
                 &trans       &trans   &trans   &trans   &trans   &trans
                 &trans       &trans   &trans &trans &trans &trans
 
-                &trans       &trans   &trans   &kp DOUBLE_QUOTE   &kp SINGLE_QUOTE &trans
+                &trans       &trans   &trans   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE &trans
                 &kp COLON       &kp LEFT &kp DOWN &kp RIGHT &trans &trans
 
-                &trans       &trans   &trans   &trans   &kp EQUAL &kp DOUBLE_QUOTE
+                &trans       &trans   &trans   &trans   &kp EQUAL &kp DOUBLE_QUOTES
                 &git_add     &git_push &kp QUESTION &kp LS(MINUS) &kp EQUAL &trans &trans &trans
 
                 &trans &trans &trans &trans &trans &trans &trans &trans
