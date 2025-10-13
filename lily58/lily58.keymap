@@ -103,9 +103,9 @@
                 &kp M                       &kp COMMA                    &kp DOT
                 &kp FSLH                    &kp RSHFT
 
-                &kp LALT                    &kp LGUI                      &mo 1
-                &kp SPACE                   &mt LGUI RET                  &mo 2
-                &kp BSPC                    &kp LCTRL
+                &kp LALT                           &kp LGUI                      &mo 1
+                &mt LSHIFT SPACE                   &mt LGUI RET                  &mo 2
+                &kp BSPC                           &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
