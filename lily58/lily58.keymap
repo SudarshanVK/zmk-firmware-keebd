@@ -87,10 +87,10 @@
                 &mt CARET KP_NUMBER_6      &mt AMPERSAND KP_NUMBER_7    &mt ASTERISK KP_NUMBER_8
                 &mt LEFT_PARENTHESIS KP_NUMBER_9 &mt RIGHT_PARENTHESIS NUMBER_0 &kp GRAVE
 
-                &kp TAB                    &kp Q                        &kp W
-                &kp E                      &kp R                        &kp T
-                &kp Y                      &kp U                        &kp I
-                &kp O                      &kp P                        &kp BACKSLASH
+                &kp TAB                                         &kp Q                        &kp W
+                &mt LS(LC(LA(LG(LCTRL)))) E                     &kp R                        &kp T
+                &kp Y                                           &kp U                        &mt LS(LC(LA(LG(LCTRL)))) I
+                &kp O                                           &kp P                        &kp BACKSLASH
 
                 &kp LS(LC(LA(LG(LCTRL))))  &kp A                        &mt LSHIFT S
                 &kp D                      &kp F                        &kp G
@@ -104,8 +104,8 @@
                 &kp FSLH                    &kp RSHFT
 
                 &kp LALT                    &kp LGUI                      &mo 1
-                &kp SPACE                   &kp RET                       &mo 2
-                &kp BSPC                    &kp LS(LC(LA(LG(LCTRL))))
+                &kp SPACE                   &mt LGUI RET                  &mo 2
+                &kp BSPC                    &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -133,7 +133,7 @@
                 &kp LSHFT       &trans   &trans   &trans   &trans   &kp LEFT_BRACKET
                 &activate_venv &source_env &kp RIGHT_BRACKET &kp KP_MINUS &kp NUMBER_0 &trans &trans &kp PIPE
 
-                &trans &trans &trans &trans &trans &trans &trans &trans &kp LC(LG(Q))
+                &trans &trans &trans &trans &trans &trans &trans &trans &kp LG(LC(Q))
             >;
         };
 
